@@ -1,4 +1,3 @@
-import WEATHER_API_KEY from "./keys.js"
 // Selectors
 const form = document.querySelector(".search-bar");
 const searchInput = document.querySelector("#search-input");
@@ -23,7 +22,7 @@ function getSearch(e){
 }
 
 async function update(){
-    url = `http://api.weatherapi.com/v1/current.json?key=${WEATHER_API_KEY}&q=${searchValue}&aqi=no`;
+    url = `http://api.weatherapi.com/v1/current.json?key=459e9402d2544774bfb44858222206&q=${searchValue}&aqi=no`;
     const dataFetch = await fetch (url);
     const data = await dataFetch.json();
     textContent.classList.remove("hidden");
