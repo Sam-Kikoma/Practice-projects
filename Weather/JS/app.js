@@ -1,4 +1,4 @@
-import WEATHER_API_KEY from "./JS/keys.js";
+import WEATHER_API_KEY from "./keys.js";
 // Selectors
 const form = document.querySelector(".search-bar");
 const searchInput = document.querySelector("#search-input");
