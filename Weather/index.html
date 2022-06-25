@@ -10,15 +10,15 @@
 <body>
     <main>
         <section>
-            <div class="search-bar">
-                <input type="text" id="search-content" placeholder="Enter a location">
+            <form class="search-bar">
+                <input type="text" id="search-input" placeholder="Enter a location" required>
                 <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-            </div>
-            <div class="text-content">
-                <h1 id="location">Tokyo</h1>
-                <p id="temp">21</p>
-                <p id="humidity">13</p>
-                <p id="wind-speed">13 km/h</p>
+            </form>
+            <div class="text-content hidden">
+                <h1 id="location"></h1>
+                <p id="temp"></p>
+                <p id="condition"></p>
+                <p id="wind-speed"></p>
             </div>
         </section>
     </main>

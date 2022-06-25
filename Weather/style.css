@@ -93,3 +93,7 @@ p{
 i{
     pointer-events: none;
 }
+
+.text-content.hidden{
+    display: none;
+}
