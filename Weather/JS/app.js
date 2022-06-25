@@ -1,4 +1,4 @@
-import WEATHER_API_KEY from "./keys.js";
+import WEATHER_API_KEY from "./keys.js"
 // Selectors
 const form = document.querySelector(".search-bar");
 const searchInput = document.querySelector("#search-input");
@@ -7,9 +7,6 @@ const textContent = document.querySelector(".text-content");
 const location = document.querySelector("#location");
 const condition = document.querySelector("#condition");
 const temp = document.querySelector("#temp");
-const humidity = document.querySelector("#humidity");
-const windSpeed = document.querySelector("#wind-speed");
-const icon = document.querySelector("#icon");
 let searchValue;
 let url;
 
@@ -30,7 +27,6 @@ async function update(){
     const dataFetch = await fetch (url);
     const data = await dataFetch.json();
     textContent.classList.remove("hidden");
-    console.log(data);
     location.innerText = `${data.location.name},${data.location.country}`;
     temp.innerText = `${data.current.feelslike_c}℃`;
     condition.innerText = data.current.condition.text;
