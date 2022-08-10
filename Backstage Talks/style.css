@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap');
+
+:root{
+    --light-blue: #00c1b5;
+    --yellow:#ffbe00;
+    --red:#e30512;
+    --orange:#ff651a;
+    --blue:#1d3fbb;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Mono', monospace;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+#big-logo{
+    display: none;
+}
+
+main{
+    text-align: center;
+}
+
+main section{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+img{
+    height: auto;
+    max-width: 420px;
+    width: 80%;
+}
+
+main section a{
+    color: white;
+}
+
+main section p{
+    font-weight: 700;
+}
+
+#email{
+    display: none;
+}
+
+#issue-six{
+    background: white;
+}
+
+#issue-five{
+    background: var(--light-blue);
+}
+
+#issue-four{
+    background: var(--orange);
+}
+
+#issue-three{
+    background: var(--yellow);
+}
+
+#issue-two{
+    background: var(--blue);
+}
+
+#issue-one{
+    background: var(--red);
+}
+#sec-buy-six{
+    color: #e568ac;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+#priv-policy{
+    text-decoration: underline;
+}
+
+ul{
+    list-style: none;
+}
+
+footer{
+    background: var(--red);
+    padding: 1rem;
+}
+
+footer section{
+    text-align: center;
+}
+
+
+@media only screen and (min-width: 992px){
+
+    /* Header styling */
+
+    header{
+        position: fixed;
+        top:16px;
+
+    }/* Main styling */
+
+    main{
+        scroll-snap-type: y mandatory;
+        overflow-y: scroll;
+        height: 100vh;
+    }
+    /* Main section styling */
+
+    main section{
+        height: 100vh;
+        scroll-snap-align: center; 
+    }
+
+    .section-text,.section-buy{
+        margin: 0.5rem 0;
+    }
+
+    /* Footer styling */
+    footer{
+        position: fixed;
+        bottom:16px;
+        left: 20px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        text-align: left;
+        width: 95%;
+        background: inherit;
+    }
+
+    footer section{
+        width: 25%;
+        padding: 1rem;
+    }
+
+    footer section:nth-child(2){
+        text-align: right;
+    }
+
+    .desc-text{
+        font-weight: 700;
+        line-height: 1.3rem;
+        margin-bottom: 1rem;
+    }
+
+    li{
+        margin: 1rem 0;
+    }
+
+}
+
+
