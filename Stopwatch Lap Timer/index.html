@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Stopwatch Lap Timer</title>
+</head>
+<body>
+    <section class="wrapper">
+        <h1>Stopwatch</h1>
+        <h2>Lap Timer</h2>
+        <p class="lap-time">
+            <span id="minutes">00 :</span>
+            <span id="seconds">00 :</span>
+            <span id="tens">00</span>
+        </p>
+    </section>
+    <section class="controls">
+        <div id="start-btn" class="btn btn-floating green btn-large">
+            <i class="large material-icons">play_arrow</i>
+        </div>
+        <div id="stop-btn" class="btn btn-floating red btn-large">
+            <i class="large material-icons">stop</i>
+        </div>
+        <div id="reset-btn" class="btn btn-floating grey btn-large">
+            <i class="large material-icons">remove</i>
+        </div>
+    </section>
+    <ul id="laps" class="laps-container">
+        <li>00:00</li>
+        <li>00:00</li>
+        <li>00:00</li>
+        <li>00:00</li>
+    </ul>
+    <script src="app.js"></script>
+</body>
+</html>
