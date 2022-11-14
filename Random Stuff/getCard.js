@@ -19,3 +19,5 @@ function getCard(){
     const cardSuit = ["clubs","spades", "hearts", "diamonds"];
     return {Value: random(cardValue), Suit: random(cardSuit)};
 }
+
+
