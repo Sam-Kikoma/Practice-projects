@@ -2,8 +2,9 @@
 
 function isPangram(sentence){
     let alphabet = "abcdefghijklmnopqrstuvwxyz";
+    lowerCase = sentence.toLowerCase();
     for(let letter of alphabet){
-        if(sentence.indexOf(alphabet) === -1){
+        if(lowerCase.indexOf(letter) === -1){
             return false
         }
     }
