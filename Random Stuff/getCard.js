@@ -10,7 +10,7 @@
 //Return both in an object
 
 function random(arr){
-    const value = arr[Math.floor(Math.random() * arr.length)];
+    const value = Math.floor(Math.random() * arr.length);
     return arr[value];
 }
 
@@ -19,4 +19,3 @@ function getCard(){
     const cardSuit = ["clubs","spades", "hearts", "diamonds"];
     return {Value: random(cardValue), Suit: random(cardSuit)};
 }
-getCard()
