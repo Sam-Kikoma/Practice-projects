@@ -1,5 +1,5 @@
-import app from "./app.js";
-import { PORT } from "./utils/config.js";
+import app from "./app.ts";
+import { PORT } from "./utils/config.ts";
 
 app.listen(PORT, () => {
 	console.log(`Server is live on PORT ${PORT}`);
