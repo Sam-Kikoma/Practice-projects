@@ -8,18 +8,20 @@ import logo from "./assets/logo.png";
 
 const App = () => {
 	return (
-		<div>
-			<div className="fixed top-0 left-0 w-full flex justify-between p-5">
+		<div className="relative">
+			<div className="hidden md:fixed md:top-0 md:left-0 w-full md:flex md:justify-between md:p-5">
 				<div>
 					<img src={logo} alt="logo-image" className="w-[260px] h-auto" />
 				</div>
 				<p className="font-bold">info@backstagetalks.com</p>
 			</div>
-			<Page issueNum={1} bgImage={bgOne} bgColor="bg-custom-red" />
-			<Page issueNum={2} bgImage={bgTwo} bgColor="bg-custom-blue" />
-			<Page issueNum={3} bgImage={bgThree} bgColor="bg-custom-yellow" />
-			<Page issueNum={4} bgImage={bgFour} bgColor="bg-custom-orange" />
-			<Page issueNum={5} bgImage={bgFive} bgColor="bg-custom-light-blue" />
+			<div className="h-screen w-full snap-y snap-mandatory overflow-y-auto scroll-smooth">
+				<Page issueNum={1} bgImage={bgOne} bgColor="bg-custom-red" />
+				<Page issueNum={2} bgImage={bgTwo} bgColor="bg-custom-blue" />
+				<Page issueNum={3} bgImage={bgThree} bgColor="bg-custom-yellow" />
+				<Page issueNum={4} bgImage={bgFour} bgColor="bg-custom-orange" />
+				<Page issueNum={5} bgImage={bgFive} bgColor="bg-custom-light-blue" />
+			</div>
 			<footer className="w-[300px] font-bold fixed left-5 bottom-10">
 				<p>
 					Backstage Talks is a magazine of casual, but in depth dialogues on design and business. Our decisions shape

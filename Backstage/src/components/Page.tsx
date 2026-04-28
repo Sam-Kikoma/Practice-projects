@@ -6,7 +6,7 @@ interface PageProps {
 
 const Page = ({ issueNum, bgImage, bgColor }: PageProps) => {
 	return (
-		<div className={`max-w-full h-screen p-5 overflow-hidden font-primary ${bgColor}`}>
+		<div className={`max-w-full h-screen p-5 overflow-hidden font-primary ${bgColor} snap-end`}>
 			<div className="flex justify-center items-center h-[85%] flex-col">
 				<img src={bgImage} alt="Magazine image" className="w-[420px]" />
 				<p className="text-center font-bold">Issue {issueNum} is sold out.</p>
